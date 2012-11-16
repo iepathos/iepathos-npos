@@ -26,10 +26,10 @@ def main():
 	# Information in format: ein | name | city | state | - | United States |
 	for line in lines:
 		npodata = line.split('|') # split each line along the '|'
-		#ein = npodata[0] # Electronic Identification Number - IRS assigned id number	
-		#name = npodata[1] # Name of Non-Profit Organization
-		#city = npodata[2]
-		#state = npodata[3]
+		# ein = npodata[0] # Electronic Identification Number - IRS assigned id number	
+		# name = npodata[1] # Name of Non-Profit Organization
+		# city = npodata[2]
+		# state = npodata[3]
 		# npodata[4] is just '-'
 		country = npodata[5] 
 		d = dict(ein = npodata[0], name = npodata[1], city = npodata[2], state = npodata[3], country = npodata[5], is_active = '1')
